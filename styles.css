@@ -1,0 +1,32 @@
+body {
+  width: 300px;
+  margin: 15px;
+}
+.logo_ext{
+  display: flex;
+}
+
+#logo_img img {
+  height: 45px;
+}
+
+#logo_ver{
+  padding-top: 30px;
+  font-size: 10px;
+}
+
+.Title {
+  margin-left: 5px;
+}
+
+.Title h3 {
+  padding-top: 8px;
+}
+
+.social_media{
+  display: flex;
+}
+
+.fa {
+  height: 15px;
+}
