@@ -6,16 +6,26 @@
 .banner_left {
   padding: 8px;
   float: left;
-}
+
 
 .banner_right {
   padding: 8px;
 }
 
 body {
-  font-family: arial, helvetica, sans-serif;
+  font-family: 'Orelega One', cursive;
 }
-
+h1 {
+  color: white;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 3px;
+  margin-right: 190px;
+  margin-top: 10px;
+}
+#demo {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 70%;
+}
 .body_inner {
   padding: 0 32px;
 }
@@ -24,7 +34,7 @@ body {
   border: 0;
   padding: 0;
   margin: 0;
-  width: 50%;
+  width: 70%;
   float: left;
 }
 
@@ -34,11 +44,19 @@ body {
   margin: 0;
   width: 46%;
   float: left;
+  position: relative;
+  left: 330px;
+  bottom: 323px
 }
 
 .body_wrapper {
-  width: 100%;
+  width: 650px;
   float: left;
+  padding-right: 150px;
+  height: 350px;
+}
+.btn {
+  margin: 10px;
 }
 
 .box {
