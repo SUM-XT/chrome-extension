@@ -2,24 +2,55 @@ body {
   width: 300px;
   margin: 15px;
 }
+label {
+  font-family: 'Orelega One', cursive;
+  text-align: center;
+}
+button {
+  font-family: 'Orelega One', cursive;
+}
+.btn-light:hover {
+  border-color: blue;
+}
 .logo_ext{
+  text-align: center;
   display: flex;
 }
-
+.navbar {
+  color: white;
+  text-align: center;
+}
+#value {
+  font-family: 'Orelega One', cursive;
+  margin-left: 55px;
+  margin-top: 10px;
+}
+#about {
+  font-family: 'Lobster', cursive;
+  margin-left: 110px;
+  margin-top: 10px;
+}
 #logo_img img {
   height: 45px;
+  margin-left: 5px;
 }
 
 #logo_ver{
   padding-top: 30px;
   font-size: 10px;
 }
-
-.Title {
-  margin-left: 5px;
+#apply {
+  margin-left: 105px;
+  margin-top: 10px;
 }
 
-.Title h3 {
+.Title {
+  margin-left: 35px;
+font-family: 'Bangers', cursive;
+letter-spacing: 3px;
+}
+
+.Title h2 {
   padding-top: 8px;
 }
 
@@ -29,4 +60,8 @@ body {
 
 .fa {
   height: 15px;
+}
+.btn-light {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
