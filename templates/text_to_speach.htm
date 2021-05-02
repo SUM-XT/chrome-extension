@@ -2,17 +2,25 @@
 <html>
 <head>
   <title>Text-to-Speech Sample</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="/CSS/tts.css" rel="stylesheet" type="text/css"/>
+  <link href='https://fonts.googleapis.com/css?family=Stylish' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Orelega+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="banner">
+  <nav class="navbar navbar-dark bg-dark">
   <div class="banner_left">
     <img src="icon_128.png" class="logo" alt="">
   </div>
+
   <div class="banner_right">
-    <h1>Text-to-Speech Sample</h1>
+    <h1>Text-to-Speech</h1>
+  </nav>
     <p>
       Use this application to try out all of the text-to-speech voices in Chrome.
     </p>
@@ -24,12 +32,12 @@
     <div class="body_inner">
 
       Enter text here:
-      <textarea id="srctext" rows="6" cols="40">This is a demo of text-to-speech.</textarea>
+      <p id="demo"><textarea id="srctext" rows="4" cols="40">This is a demo of text-to-speech.</textarea></p>
 
       <p>
-        <button id="speak" class="large_button">Speak</button>
-        <button id="stop" class="large_button" >Stop</button>
-        <button id="summary-gen" class="large_button">Get the latest summary</button>
+        <button id="speak" class="btn btn-success">Speak</button>
+        <button id="stop" class="btn btn-danger" >Stop</button>
+        <button id="summary-gen" class="btn btn-dark">Get the latest summary</button>
       </p>
 
       <div class="box" id="ttsStatusBox">
@@ -38,16 +46,6 @@
 
       <p>
 
-        Click on or tab to these boxes:
-
-      <p>
-
-      <span id="alpha" tabindex="0" class="tabbable">Alpha</span>
-      <span id="bravo" tabindex="0" class="tabbable" >Bravo</span>
-      <span id="charlie" tabindex="0" class="tabbable" >Charlie</span>
-      <span id="delta" tabindex="0" class="tabbable" >Delta</span>
-      <span id="echo" tabindex="0" class="tabbable" >Echo</span>
-      <span id="foxtrot" tabindex="0" class="tabbable" >Foxtrot</span>
 
     </div>
   </div>
@@ -101,3 +99,4 @@
 <script src="/js/text_to_speach.js"></script>
 </body>
 </html>
+
