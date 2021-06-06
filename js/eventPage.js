@@ -26,12 +26,16 @@ $(document).ready(function () {
   // @method2 Get text from DOM of webpage
   $('#innerTXT').click( function(tab) {
     console.log("second method is triggered...");
-    inner_text_fun(tab);
-
-    
-    
+    inner_text_fun(tab);  
     
   });
+
+//   $('#api-call').on('click', function(e){
+//     console.log("doc method is triggered");
+//     e.preventDefault();
+//     chrome.tabs.create({url: "http://stackoverflow.com/", active: false});
+//     return false;
+// });
 
 
   // Launch Text to speech
@@ -78,11 +82,6 @@ function set_val() {
 function Method1(data, tab) {
   if (data.menuItemId == 'SumExt' && data.selectionText) {
     var this_val = data.selectionText;
-
-    // chrome.tabs.executeScript(tab.id, { file: 'js/selection.js' });
-
-    const Base = 'http://127.0.0.1:5000/';
-    var url = Base + 'test3';
 
     // Getting the percentage value
     chrome.storage.sync.get('per_val', function (fun) {
@@ -154,7 +153,6 @@ const upload2 = (options) => {
     .then((obj) => {
       console.log(obj);
       console.log('Success');
-      console.log(obj.data);
 
       console.log('im here in upload2................');
 
@@ -167,8 +165,12 @@ const upload2 = (options) => {
             chrome.storage.sync.get('summary2',function (fun) {
               // var perc = $('#intext').innerHTML;
               if (fun.summary2) {
+                console.log("new tab has been created........");
                   window.location.href="/templates/innerTxt.htm";
                   // $('#intext').text("the summary has been changed...");
+              }
+              else{
+                console.log("summary two has not yet saved ...");
               }
             });
           }
@@ -235,7 +237,7 @@ function receiveText(resultsArray) {
 
       const file_for_upload = {
         name: 'sonu',
-        perc: percent,
+        perc: 10,
         data: resultsArray[0],
       };
 

@@ -85,30 +85,6 @@ document.getElementById('speak').addEventListener('click', function () {
   speak(text.value, true);
 });
 
-document.getElementById('alpha').addEventListener('focus', function () {
-  speak('Alpha');
-});
-
-document.getElementById('bravo').addEventListener('focus', function () {
-  speak('Bravo');
-});
-
-document.getElementById('charlie').addEventListener('focus', function () {
-  speak('Charlie');
-});
-
-document.getElementById('delta').addEventListener('focus', function () {
-  speak('Delta');
-});
-
-document.getElementById('echo').addEventListener('focus', function () {
-  speak('Echo');
-});
-
-document.getElementById('foxtrot').addEventListener('focus', function () {
-  speak('Foxtrot');
-});
-
 document.getElementById('stop').addEventListener('click', function () {
   chrome.tts.stop();
 });

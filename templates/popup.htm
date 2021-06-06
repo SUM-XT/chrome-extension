@@ -8,7 +8,11 @@
     <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Stylish' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Orelega+One&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="/js/popup.js"></script>
@@ -31,17 +35,26 @@
       <label for="quantity">Select the required percent for Summary !</label>
       <input class="form-control" type="number" id="perc_val" name="quantity" min="10" max="50">
       <button type="submit" class="btn btn-dark" id="apply">Apply</button>
-      <p id="value">Currently set value is <span id=per_val></span></p>
+      <p id="value">Currently set value is <span id=per_val></span>%</p>
     </div>
     <button type="button" class="btn btn-secondary" id="innerTXT">Content of current page</button>
     <button type="button" class="btn btn-light" color="white" id="tts">Text to Speach</button>
-    <input type="file" id="file-selector" multiple>
+    <button type="button" class="btn btn-light" id="api-call" color="green">Upload Doc</a></button>
     <div class="about_us">
       <p id="about">About Us</p>
-      <div class="social_media">
-        <a href="#"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
+      <div class="social-links">
+        <a href="#!" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
+        </a>
+        <a href="#!" target="_blank">
+          <i class="fa fa-codepen fa-inverse"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sonu-bhadana/" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a href="https://github.com/Prince0047" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
       </div>
     </div>
   </body>

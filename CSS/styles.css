@@ -1,6 +1,7 @@
 body {
   width: 300px;
   margin: 15px;
+
 }
 label {
   font-family: 'Orelega One', cursive;
@@ -10,6 +11,7 @@ button {
   font-family: 'Orelega One', cursive;
 }
 .btn-light:hover {
+  background-color: rgb(239, 220, 255);
   border-color: blue;
 }
 .logo_ext{
@@ -54,13 +56,8 @@ letter-spacing: 3px;
   padding-top: 8px;
 }
 
-.social_media{
-  display: flex;
-}
 
-.fa {
-  height: 15px;
-}
+
 .btn-light {
   margin-top: 10px;
   margin-bottom: 10px;
